@@ -1,0 +1,21 @@
+body {
+  background-color: gold;
+  font-family: monospace;
+}
+
+h1 {
+  text-align: center;
+}
+
+main {
+  margin-top: 120px;
+}
+
+.title {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+img {
+  padding: 20px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Individual Pokemon</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <h1><a href="/pokemon">Pokemon Index</a></h1>
+      </div>
+    </nav>
+    <main class="container">
+      <div class="row">
+        <div class="col-sm-10 col-sm-offset-1">
+          <table>
+            <thead>
+              <tr>
+                <td class="title" width="200">Sprite</td>
+                <td class="title" width="200">Name</td>
+                <td class="title" width="200">Type</td>
+                <td class="title" width="200">Evolves From</td>
+                <td class="title" width="200">Pokedex Number</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><img src="<%= pokemon.image_url %>" alt="<%= pokemon.name %>" /></td>
+                <td><%= pokemon.name %></td>
+                <td><%= pokemon.type %></td>
+                <td><a href="/pokemon/<%= ancestorId %>"><%= pokemon.evolves_from %></a></td>
+                <td><%= pokemon.id %></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

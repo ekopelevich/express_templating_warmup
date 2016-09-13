@@ -1,0 +1,16 @@
+{
+  "name": "ek_templating",
+  "version": "1.0.0",
+  "description": "Given the pokemon_list data set, in a `server.js` file, implement an Express server that renders the following `index.ejs` template when visiting `localhost:8000/pokemon`.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.2",
+    "express": "^4.14.0"
+  }
+}
